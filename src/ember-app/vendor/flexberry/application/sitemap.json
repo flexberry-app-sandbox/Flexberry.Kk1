@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Kk",
+  "applicationTitle": "Kk",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kk",
+      "caption": "Kk",
+      "title": "Kk",
+      "children": [
+        {
+          "link": "i-i-s-kk-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-расчет-l",
+          "menuName": null,
+          "caption": "Расчет",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kk-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

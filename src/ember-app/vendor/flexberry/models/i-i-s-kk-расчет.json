@@ -1,0 +1,171 @@
+﻿{
+  "name": "IISKkРасчет",
+  "modelName": "i-i-s-kk-расчет",
+  "className": "Расчет",
+  "nameSpace": "IIS.Kk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-kk-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Расчет",
+      "modelName": "i-i-s-kk-расчет",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудники.Должности",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должности",
+              "relatedTo": "i-i-s-kk-должности",
+              "inverse": null
+            }
+          ],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-kk-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "Расчет",
+      "modelName": "i-i-s-kk-расчет",
+      "attrs": [
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудники.Должности",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должности",
+              "relatedTo": "i-i-s-kk-должности",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фио",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-kk-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

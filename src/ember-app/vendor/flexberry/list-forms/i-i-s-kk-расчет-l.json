@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kk-расчет-e",
+  "editForm": "i-i-s-kk-расчет-e",
+  "external": false,
+  "caption": "Расчет",
+  "name": "IISKkРасчетL",
+  "className": "РасчетL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kk-расчет",
+      "modelProjection": "Расчет"
+    }
+  ]
+}
